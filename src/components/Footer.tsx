@@ -6,23 +6,23 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-accent-foreground font-bold">E</span>
+                <span className="text-accent-foreground font-bold">З</span>
               </div>
-              <span className="font-semibold">Elevate VA Academy</span>
+              <span className="font-semibold">Макашова Зоя Викторовна</span>
             </div>
-            <p className="text-sm text-background/70">Персональное обучение 1-на-1 для будущих виртуальных ассистентов.</p>
+            <p className="text-sm text-background/70">Врач-апитерапевт. Специалист по естественному восстановлению организма. 35 лет практики.</p>
           </div>
           <div>
             <h4 className="font-semibold mb-4">Навигация</h4>
             <ul className="space-y-2 text-sm text-background/70">
               <li>
                 <a href="#about" className="hover:text-background transition">
-                  О нас
+                  О враче
                 </a>
               </li>
               <li>
                 <a href="#benefits" className="hover:text-background transition">
-                  Преимущества
+                  Метод лечения
                 </a>
               </li>
               <li>
@@ -38,26 +38,16 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">Поддержка</h4>
+            <h4 className="font-semibold mb-4">Информация</h4>
             <ul className="space-y-2 text-sm text-background/70">
               <li>
-                <a href="#" className="hover:text-background transition">
-                  Контакты
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-background transition">
-                  Вопросы
+                <a href="#faq" className="hover:text-background transition">
+                  Частые вопросы
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-background transition">
                   Конфиденциальность
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-background transition">
-                  Условия
                 </a>
               </li>
             </ul>
@@ -67,29 +57,24 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-background/70">
               <li>
                 <a href="#" className="hover:text-background transition">
-                  LinkedIn
+                  WhatsApp
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-background transition">
-                  Twitter
+                  Telegram
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-background transition">
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-background transition">
-                  Email
+                  ВКонтакте
                 </a>
               </li>
             </ul>
           </div>
         </div>
         <div className="border-t border-background/20 pt-8 text-center text-sm text-background/70">
-          <p>&copy; 2025 Elevate VA Academy. Все права защищены.</p>
+          <p>&copy; 2025 Макашова Зоя Викторовна. Все права защищены.</p>
         </div>
       </div>
     </footer>

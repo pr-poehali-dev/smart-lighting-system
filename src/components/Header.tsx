@@ -11,16 +11,16 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-            <span className="text-accent-foreground font-bold text-lg">E</span>
+            <span className="text-accent-foreground font-bold text-lg">З</span>
           </div>
-          <span className="font-semibold text-foreground">Elevate VA Academy</span>
+          <span className="font-semibold text-foreground">Макашова Зоя Викторовна</span>
         </div>
         <nav className="hidden md:flex items-center gap-8">
           <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition">
-            О нас
+            О враче
           </a>
           <a href="#benefits" className="text-sm text-muted-foreground hover:text-foreground transition">
-            Преимущества
+            Метод
           </a>
           <a href="#booking" className="text-sm text-muted-foreground hover:text-foreground transition">
             Записаться
@@ -30,7 +30,7 @@ export function Header() {
           </a>
         </nav>
         <Button onClick={handleGetStarted} className="bg-accent hover:bg-accent/90 text-accent-foreground">
-          Начать
+          Записаться
         </Button>
       </div>
     </header>

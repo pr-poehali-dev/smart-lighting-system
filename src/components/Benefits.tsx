@@ -1,47 +1,78 @@
 export function Benefits() {
+  const checks = [
+    "Вам лечат симптом, а причина так и осталась?",
+    "Лечите одно, но появляются другие проблемы?",
+    "Вы ходили к разным специалистам — но боль вернулась?",
+    "У вас немеют конечности, болит пятка или шея, но кроме блокады вам ничего не назначили?",
+    "Вас посадили на гормоны, обезболивающие или статины «на всю жизнь»?",
+  ]
+
   const benefits = [
     {
-      icon: "👤",
-      title: "Персональное обучение",
-      description: "Индивидуальные сессии под ваш уровень и карьерные цели",
+      icon: "🐝",
+      title: "Апитерапия",
+      description: "Натуральный метод лечения с помощью продуктов пчеловодства. Мощный противовоспалительный и восстанавливающий эффект",
     },
     {
-      icon: "⏰",
-      title: "Гибкое расписание",
-      description: "Занятия в удобное для вас время",
+      icon: "🧠",
+      title: "Восстановление кровообращения",
+      description: "Работаю со спиной для улучшения кровоснабжения мозга и внутренних органов",
     },
     {
-      icon: "💬",
-      title: "Обратная связь в реальном времени",
-      description: "Мгновенные рекомендации и корректировки на занятиях",
+      icon: "🎯",
+      title: "Причина, не симптом",
+      description: "Нахожу и устраняю первопричину боли, а не временно заглушаю её таблетками",
     },
     {
-      icon: "🚀",
-      title: "Карьерная поддержка",
-      description: "Помощь с резюме, подготовка к собеседованиям, трудоустройство",
+      icon: "🚫",
+      title: "Без таблеток",
+      description: "Никакого пожизненного приёма обезболивающих, гормонов и статинов",
     },
     {
-      icon: "🛠️",
-      title: "Инструменты и ресурсы",
-      description: "Доступ к шаблонам, гайдам и профессиональным инструментам",
+      icon: "🔍",
+      title: "Диагностика спины",
+      description: "Исследую зоны зажимов, блоков и спазмов — определяю, где нарушено кровоснабжение",
     },
     {
-      icon: "📈",
-      title: "Бессрочный доступ",
-      description: "Поддержка и материалы даже после завершения обучения",
+      icon: "⏳",
+      title: "Без ограничения по времени",
+      description: "Работаю на приёме столько, сколько нужно. Пока не решим вашу задачу",
     },
   ]
 
   return (
     <section id="benefits" className="bg-background py-20 md:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Check section */}
+        <div className="mb-20">
+          <div className="text-center mb-10">
+            <p className="text-accent font-semibold text-sm uppercase tracking-wide">Узнаёте себя?</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 text-balance">
+              Проверьте — это про вас?
+            </h2>
+          </div>
+          <div className="max-w-2xl mx-auto space-y-4">
+            {checks.map((check, index) => (
+              <div key={index} className="flex gap-3 items-start bg-card border border-border rounded-lg p-4">
+                <span className="text-xl flex-shrink-0">✅</span>
+                <p className="text-foreground">{check}</p>
+              </div>
+            ))}
+            <div className="bg-accent/10 border border-accent/30 rounded-lg p-4 text-center">
+              <p className="text-accent font-semibold">2–3 совпадения — вы по адресу</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Benefits */}
         <div className="text-center mb-16">
-          <p className="text-accent font-semibold text-sm uppercase tracking-wide">Почему мы</p>
+          <p className="text-accent font-semibold text-sm uppercase tracking-wide">Мой метод</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 text-balance">
-            Все для вашего успеха
+            Как я работаю
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Комплексное обучение для ускорения вашей карьеры виртуального ассистента
+            Натуральное восстановление без химии, операций и пожизненной зависимости от лекарств
           </p>
         </div>
 

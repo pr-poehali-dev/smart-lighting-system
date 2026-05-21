@@ -19,22 +19,26 @@ export function Hero() {
           <div className="flex flex-col gap-6">
             <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full w-fit">
               <span className="w-2 h-2 bg-accent rounded-full"></span>
-              <span className="text-sm font-medium">Профессиональное обучение</span>
+              <span className="text-sm font-medium">Апитерапия и натуропатия · 35 лет практики</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-              Выведите карьеру VA на новый уровень
+              Беспокоит спина? Шея не двигается? Немеют руки?
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Персональное обучение 1-на-1 от эксперта отрасли. Освойте навыки, стратегии и инструменты,
-              чтобы стать востребованным виртуальным ассистентом.
+              И вы ходите по врачам, но ничего не помогает? Убираю причину боли через спину и восстановление кровообращения в мозге. Без пожизненного приёма таблеток и обезболивающих уколов.
             </p>
+
+            <blockquote className="border-l-4 border-accent pl-4 italic text-muted-foreground">
+              «Врач лечит, природа излечивает» — Гиппократ
+            </blockquote>
+
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button
                 onClick={handleBookSession}
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-accent-foreground text-base"
               >
-                Записаться на сессию
+                Узнать, смогу ли я вам помочь
               </Button>
               <Button
                 onClick={handleLearnMore}
@@ -42,22 +46,28 @@ export function Hero() {
                 variant="outline"
                 className="border-border text-foreground hover:bg-muted bg-transparent"
               >
-                Узнать больше
+                О методе лечения
               </Button>
             </div>
+
             <div className="flex gap-8 pt-4 text-sm">
               <div>
-                <p className="font-semibold text-foreground">500+</p>
-                <p className="text-muted-foreground">Выпускников</p>
+                <p className="font-semibold text-foreground">1200+</p>
+                <p className="text-muted-foreground">Пациентов</p>
               </div>
               <div>
-                <p className="font-semibold text-foreground">4.9/5</p>
-                <p className="text-muted-foreground">Средний рейтинг</p>
+                <p className="font-semibold text-foreground">35 лет</p>
+                <p className="text-muted-foreground">Практики</p>
               </div>
               <div>
-                <p className="font-semibold text-foreground">10+</p>
-                <p className="text-muted-foreground">Лет опыта</p>
+                <p className="font-semibold text-foreground">Москва</p>
+                <p className="text-muted-foreground">Приём очно</p>
               </div>
+            </div>
+
+            <div className="text-sm text-muted-foreground border border-border rounded-lg p-4 bg-muted/30 space-y-1">
+              <p>📍 Приём в Москве. Живая очередь — предупреждаем сразу.</p>
+              <p>⏳ Не ограничиваю временем. Работаю, пока не решим задачу.</p>
             </div>
           </div>
 
@@ -65,8 +75,8 @@ export function Hero() {
           <div className="relative h-96 md:h-full min-h-96">
             <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl"></div>
             <img
-              src="/professional-woman-working-on-laptop-in-virtual-me.jpg"
-              alt="Обучение виртуальных ассистентов"
+              src="/professional-woman-smiling.png"
+              alt="Макашова Зоя Викторовна — апитерапевт"
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
